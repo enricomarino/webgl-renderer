@@ -1,0 +1,14 @@
+{
+  "name": "webgl-renderer",
+  "repo": "enricomarino/webgl-renderer",
+  "version": "0.1.0",
+  "description": "WebGL Renderer component",
+  "keywords": ["webgl", "renderer"],
+  "scripts": ["index.js"],
+  "dependencies": {
+  },
+  "development": {
+    "component/assert": "*"
+  },
+  "license": "MIT"
+}
