@@ -6,6 +6,11 @@
   "keywords": ["webgl", "renderer"],
   "scripts": ["index.js"],
   "dependencies": {
+    "enricomarino/webgl-context": "*",
+    "enricomarino/webgl-attribute": "*",
+    "enricomarino/webgl-uniform": "*",
+    "enricomarino/webgl-program": "*",
+    "enricomarino/webgl-model": "*"
   },
   "development": {
     "component/assert": "*"
