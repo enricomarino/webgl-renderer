@@ -9,6 +9,7 @@
     "enricomarino/webgl-context": "*",
     "enricomarino/webgl-attribute": "*",
     "enricomarino/webgl-uniform": "*",
+    "enricomarino/webgl-shader": "*",
     "enricomarino/webgl-program": "*",
     "enricomarino/webgl-model": "*"
   },
