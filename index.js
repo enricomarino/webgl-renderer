@@ -1,4 +1,3 @@
-
 /**
  * Component dependencies.
  */
@@ -21,16 +20,14 @@ module.exports = function () {
    * Create the renderer.
    * @param {HTMLCanvasElement} canvas The canvas element.
    * @param {Object} options The options for creating the engine.
-   * @return {v3.Engine} The engine.
+   * @return {Renderer} The engine.
    * @api public
    */
   
   function Renderer (canvas, options) {
-    var options = options || {};
-    var context = context(canvas, options);
-
+    options = options || {};
     this.canvas = canvas;
-    this.context = context;
+    this.context = this.gl = context(canvas, options);
     this.Attribute = attribute(context);
     this.Uniform = uniform(context);
     this.Shader = shader(context);
