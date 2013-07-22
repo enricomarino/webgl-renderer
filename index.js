@@ -26,13 +26,14 @@ module.exports = function () {
   
   function Renderer (canvas, options) {
     options = options || {};
+    var ctx = context(canvas, options);
     this.canvas = canvas;
-    this.context = this.gl = context(canvas, options);
-    this.Attribute = attribute(context);
-    this.Uniform = uniform(context);
-    this.Shader = shader(context);
-    this.Program = program(context);
-    this.Model = model(context);
+    this.context = ctx;
+    this.Attribute = attribute(ctx);
+    this.Uniform = uniform(ctx);
+    this.Shader = shader(ctx);
+    this.Program = program(ctx);
+    this.Model = model(ctx);
   }
 
   /**
